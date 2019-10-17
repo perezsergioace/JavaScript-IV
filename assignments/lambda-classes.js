@@ -34,9 +34,7 @@ class Student extends Person{
         this.favSubjects = attributes.favSubjects
     }
     listsSubjects(){
-        this.favSubjects.map(subject => {
-            console.log(subject);
-        })
+        this.favSubjects.forEach(element => {console.log(element)})
     }
     PRAssignment(){
         return `${this.name} has submitted a PR for ${this.subject}`
